@@ -1,5 +1,5 @@
 {% set name = "felupe" %}
-{% set version = "9.5.0" %}
+{% set version = "10.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/felupe-{{ version }}.tar.gz
-  sha256: fa0f5ee235c545024e1f8be5db42a4689fe61a26eeef06a7289d1ae4be2a5283
+  sha256: 7da8a5b85391155b6a62b9b9a7a43994ac39cce43e5d868a477d47fdf0af7fe0
 
 build:
   noarch: python
