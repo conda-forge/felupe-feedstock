@@ -1,13 +1,13 @@
 {% set name = "felupe" %}
-{% set version = "10.1.0" %}
+{% set version = "11.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/felupe-{{ version }}.tar.gz
-  sha256: cf179e45a960ca9e79f18551a4745c37496733abed586df5d8c433bc97f4571c
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/felupe-{{ version }}.tar.gz
+  sha256: 213c1d6d7801142b5076c38f9b3665e4fc5d8213be3abbc3446cc3e5df165605
 
 build:
   noarch: python
