@@ -1,12 +1,12 @@
 {% set name = "felupe" %}
-{% set version = "11.3.0" %}
+{% set version = "12.0.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/felupe-{{ version }}.tar.gz
-  sha256: d267ea792b31bbd2cde6517d19369b207eb98ab1c81710b831dc714b5b92fcf6
+  sha256: e40069f6347777d55728bf97413732d572a2990dbab98175b9e3a250c9d71b94
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -15,7 +15,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61
+    - setuptools >=77.0.3
     - pip
   run:
     - python >={{ python_min }}
@@ -35,7 +35,7 @@ about:
   home: https://pypi.org/project/felupe/
   summary: Finite Element Analysis
   dev_url: https://github.com/adtzlr/felupe
-  license: GPL-3.0-only
+  license: GPL-3.0-or-later
   license_file: LICENSE
 
 extra:
