@@ -1,12 +1,12 @@
 {% set name = "felupe" %}
-{% set version = "12.0.0" %}
+{% set version = "12.1.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/felupe-{{ version }}.tar.gz
-  sha256: e40069f6347777d55728bf97413732d572a2990dbab98175b9e3a250c9d71b94
+  sha256: 0af441c118515e80d4e59000c2a043fac7f87c5888524882077d12547e8845ca
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation

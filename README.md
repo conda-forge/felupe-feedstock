@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/felupe-feedstoc
 
 Home: https://pypi.org/project/felupe/
 
-Package license: GPL-3.0-only
+Package license: GPL-3.0-or-later
 
 Summary: Finite Element Analysis
 
